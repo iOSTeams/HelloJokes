@@ -28,5 +28,29 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func alignLeftTapped(sender: AnyObject) {
+        label.textAlignment = NSTextAlignment.Left
+    }
+    @IBAction func alignRightTapped(sender: AnyObject) {
+        label.textAlignment = NSTextAlignment.Right
+    }
+    @IBAction func alignCenterTapped(sender: AnyObject) {
+                label.textAlignment = NSTextAlignment.Center
+    }
+    @IBAction func setShadowTapped(sender: AnyObject) {
+        label.layer.shadowColor = UIColor.blackColor().CGColor
+        label.layer.shadowOffset = CGSizeMake(3, 3)
+        label.layer.shadowRadius = 2
+        label.layer.shadowOpacity = 0.25
+    }
+    @IBAction func setFontTapped(sender: AnyObject) {
+        label.font = UIFont(name: "Verdana", size: 30.0)
+    }
+    @IBAction func setSizeTapped(sender: AnyObject) {
+
+    }
+    @IBAction func setColorTapped(sender: AnyObject) {
+        label.textColor = UIColor.blueColor()
+    }
 }
 
