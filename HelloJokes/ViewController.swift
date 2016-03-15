@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func dismissKeyboard(sender: UITextField) {
+        label.text = textField.text
+        self.resignFirstResponder()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

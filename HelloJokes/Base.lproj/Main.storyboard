@@ -22,68 +22,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7lN-Qe-XOu" userLabel="TextField">
-                                <rect key="frame" x="200" y="174.5" width="200" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="XWh-cK-4GH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-ky-RMS" userLabel="Enter">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-ky-RMS" userLabel="Enter">
                                 <rect key="frame" x="281" y="254.5" width="37" height="30"/>
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6f-Tz-J5v"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-IS-Lpk">
-                                <rect key="frame" x="271" y="285.5" width="58" height="30"/>
-                                <state key="normal" title="setColor"/>
-                                <connections>
-                                    <action selector="setColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tG-LP-uDE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-RM-bkc">
-                                <rect key="frame" x="275" y="316.5" width="50" height="30"/>
-                                <state key="normal" title="setSize"/>
-                                <connections>
-                                    <action selector="setSizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1T-Dz-c0e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neQ-lz-PhF">
-                                <rect key="frame" x="274" y="347.5" width="52" height="30"/>
-                                <state key="normal" title="setFont"/>
-                                <connections>
-                                    <action selector="setFontTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tR1-cX-Zrr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebf-uo-jdo">
-                                <rect key="frame" x="262" y="378.5" width="76" height="30"/>
-                                <state key="normal" title="setShadow"/>
-                                <connections>
-                                    <action selector="setShadowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F3C-Qe-IvU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFh-NP-Sck">
-                                <rect key="frame" x="270" y="471.5" width="60" height="30"/>
-                                <state key="normal" title="alignLeft"/>
-                                <connections>
-                                    <action selector="alignLeftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oma-go-Yw8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRF-9A-KiO">
-                                <rect key="frame" x="257.5" y="409.5" width="85" height="30"/>
-                                <state key="normal" title="alightCenter"/>
-                                <connections>
-                                    <action selector="alignCenterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eT2-4b-vYI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF5-nm-uAV">
-                                <rect key="frame" x="266" y="440.5" width="69" height="30"/>
-                                <state key="normal" title="alignRight"/>
-                                <connections>
-                                    <action selector="alignRightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LU5-gu-Tkn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
@@ -96,6 +39,66 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-IS-Lpk">
+                                <rect key="frame" x="271" y="285.5" width="58" height="30"/>
+                                <state key="normal" title="setColor"/>
+                                <connections>
+                                    <action selector="setColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tG-LP-uDE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-RM-bkc">
+                                <rect key="frame" x="275" y="316.5" width="50" height="30"/>
+                                <state key="normal" title="setSize"/>
+                                <connections>
+                                    <action selector="setSizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1T-Dz-c0e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neQ-lz-PhF">
+                                <rect key="frame" x="274" y="347.5" width="52" height="30"/>
+                                <state key="normal" title="setFont"/>
+                                <connections>
+                                    <action selector="setFontTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tR1-cX-Zrr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebf-uo-jdo">
+                                <rect key="frame" x="262" y="378.5" width="76" height="30"/>
+                                <state key="normal" title="setShadow"/>
+                                <connections>
+                                    <action selector="setShadowTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F3C-Qe-IvU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFh-NP-Sck">
+                                <rect key="frame" x="270" y="471.5" width="60" height="30"/>
+                                <state key="normal" title="alignLeft"/>
+                                <connections>
+                                    <action selector="alignLeftTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oma-go-Yw8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRF-9A-KiO">
+                                <rect key="frame" x="257.5" y="409.5" width="85" height="30"/>
+                                <state key="normal" title="alightCenter"/>
+                                <connections>
+                                    <action selector="alignCenterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eT2-4b-vYI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF5-nm-uAV">
+                                <rect key="frame" x="266" y="440.5" width="69" height="30"/>
+                                <state key="normal" title="alignRight"/>
+                                <connections>
+                                    <action selector="alignRightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LU5-gu-Tkn"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7lN-Qe-XOu" userLabel="TextField">
+                                <rect key="frame" x="200" y="174" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="XWh-cK-4GH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="tuT-Qw-2jc"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
