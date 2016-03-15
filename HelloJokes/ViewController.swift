@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var textField: UITextField!
+    var timer = NSTimer()
+    var counter = 0
     override func viewDidLoad() {
         
 
@@ -20,7 +23,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
     }
-
+    @IBAction func startButton(sender: UIButton) {
+        counter = 0
+        timeLabel.text = String(counter)
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: ("updateCounter"), userInfo: nil, repeats: true)
+    }
+    @IBAction func stopButton(sender: UIButton) {
+        timer.invalidate()
+    }
+    func updateCounter() {
+        counter += 1
+        timeLabel.text = String(counter)
+    }
+    
     @IBAction func dismissKeyboard(sender: UITextField) {
         label.text = textField.text
         self.resignFirstResponder()
