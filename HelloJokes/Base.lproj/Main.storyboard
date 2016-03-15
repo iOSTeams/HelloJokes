@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="MissSmartyPantsSkinny.ttf">
+            <string>MissSmartyPants</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -22,7 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="XWh-cK-4GH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-ky-RMS" userLabel="Enter">
@@ -32,16 +37,6 @@
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6f-Tz-J5v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
-                                <rect key="frame" x="150" y="25" width="300" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="IeS-VZ-hh7"/>
-                                    <constraint firstAttribute="width" constant="300" id="MME-6r-dH6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-IS-Lpk">
                                 <rect key="frame" x="271" y="285.5" width="58" height="30"/>
                                 <state key="normal" title="setColor"/>
@@ -91,6 +86,16 @@
                                     <action selector="alignRightTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LU5-gu-Tkn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
+                                <rect key="frame" x="150" y="28" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IeS-VZ-hh7"/>
+                                    <constraint firstAttribute="width" constant="300" id="MME-6r-dH6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MissSmartyPants" family="MissSmartyPants" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

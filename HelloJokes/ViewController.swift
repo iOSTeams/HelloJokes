@@ -14,8 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
+        
+
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +47,7 @@ class ViewController: UIViewController {
         label.layer.shadowOpacity = 0.25
     }
     @IBAction func setFontTapped(sender: AnyObject) {
-        label.font = UIFont(name: "Verdana", size: 30.0)
+        label.font = UIFont(name: "spaceage", size: 30.0)
     }
     @IBAction func setSizeTapped(sender: AnyObject) {
 

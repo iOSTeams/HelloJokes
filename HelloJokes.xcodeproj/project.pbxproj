@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315124AC1C97CF8E00AC57D7 /* MissSmartyPantsSkinny.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 315124AB1C97CF8E00AC57D7 /* MissSmartyPantsSkinny.ttf */; };
+		315124AE1C97D32A00AC57D7 /* spaceage.otf in Resources */ = {isa = PBXBuildFile; fileRef = 315124AD1C97D32A00AC57D7 /* spaceage.otf */; };
 		31ADF7391C962B1700A24615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ADF7381C962B1700A24615 /* AppDelegate.swift */; };
 		31ADF73B1C962B1700A24615 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ADF73A1C962B1700A24615 /* ViewController.swift */; };
 		31ADF73E1C962B1700A24615 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31ADF73C1C962B1700A24615 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		315124AB1C97CF8E00AC57D7 /* MissSmartyPantsSkinny.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MissSmartyPantsSkinny.ttf; sourceTree = "<group>"; };
+		315124AD1C97D32A00AC57D7 /* spaceage.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = spaceage.otf; sourceTree = "<group>"; };
 		31ADF7351C962B1700A24615 /* HelloJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31ADF7381C962B1700A24615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31ADF73A1C962B1700A24615 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				31ADF73F1C962B1700A24615 /* Assets.xcassets */,
 				31ADF7411C962B1700A24615 /* LaunchScreen.storyboard */,
 				31ADF7441C962B1700A24615 /* Info.plist */,
+				315124AB1C97CF8E00AC57D7 /* MissSmartyPantsSkinny.ttf */,
+				315124AD1C97D32A00AC57D7 /* spaceage.otf */,
 			);
 			path = HelloJokes;
 			sourceTree = "<group>";
@@ -125,6 +131,8 @@
 			files = (
 				31ADF7431C962B1700A24615 /* LaunchScreen.storyboard in Resources */,
 				31ADF7401C962B1700A24615 /* Assets.xcassets in Resources */,
+				315124AE1C97D32A00AC57D7 /* spaceage.otf in Resources */,
+				315124AC1C97CF8E00AC57D7 /* MissSmartyPantsSkinny.ttf in Resources */,
 				31ADF73E1C962B1700A24615 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +293,7 @@
 				31ADF7491C962B1700A24615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
