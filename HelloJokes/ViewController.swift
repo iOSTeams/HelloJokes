@@ -9,26 +9,51 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
+    
+    var timer = NSTimer()
+    var counter = 0
+
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var clockLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var textField: UITextField!
-    var timer = NSTimer()
-    var counter = 0
-    override func viewDidLoad() {
-        
 
+
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+             timer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: ("updateClock"), userInfo: nil, repeats: true)
         
     }
     @IBAction func startButton(sender: UIButton) {
         counter = 0
         timeLabel.text = String(counter)
         
+   
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: ("updateCounter"), userInfo: nil, repeats: true)
     }
+    
+    func updateClock() {
+        
+        let dateFormatter = NSDateFormatter()
+        let timeFormatter = NSDateFormatter()
+        
+        //long, short, medium
+        dateFormatter.dateStyle = .MediumStyle
+        timeFormatter.timeStyle = .MediumStyle
+        
+        clockLabel.text = dateFormatter.stringFromDate(NSDate() )
+        
+        dateLabel.text = timeFormatter.stringFromDate(NSDate())
+
+    }
+    
     @IBAction func stopButton(sender: UIButton) {
         timer.invalidate()
     }
@@ -49,7 +74,6 @@ class ViewController: UIViewController {
     @IBAction func enterTapped(sender: AnyObject) {
         label.text = textField.text
     }
-
 
     @IBAction func alignLeftTapped(sender: AnyObject) {
         label.textAlignment = NSTextAlignment.Left

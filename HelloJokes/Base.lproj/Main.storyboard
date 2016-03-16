@@ -99,6 +99,12 @@
                                     <action selector="dismissKeyboard:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="tuT-Qw-2jc"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rno-BH-0d1">
+                                <rect key="frame" x="50" y="100" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLD-5c-mfL" userLabel="Start">
                                 <rect key="frame" x="50" y="200" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
@@ -113,8 +119,14 @@
                                     <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ufW-4U-2in"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rno-BH-0d1">
-                                <rect key="frame" x="50" y="100" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uB-OP-oWf" userLabel="ClockLabel">
+                                <rect key="frame" x="100" y="20" width="38" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1t-yc-c6o" userLabel="DateLabel">
+                                <rect key="frame" x="464" y="10" width="36" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -133,6 +145,7 @@
                             <constraint firstItem="7lN-Qe-XOu" firstAttribute="top" secondItem="zXa-Mz-BDe" secondAttribute="bottom" constant="50" id="M4x-uJ-bQY"/>
                             <constraint firstItem="FFh-NP-Sck" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MPT-eT-RWw"/>
                             <constraint firstItem="zXa-Mz-BDe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MxS-cq-ZDk"/>
+                            <constraint firstAttribute="trailing" secondItem="N1t-yc-c6o" secondAttribute="trailing" constant="100" id="O6P-bz-Gu0"/>
                             <constraint firstItem="Clt-RM-bkc" firstAttribute="top" secondItem="fF8-IS-Lpk" secondAttribute="bottom" constant="1" id="Sz5-js-7Bg"/>
                             <constraint firstItem="ebf-uo-jdo" firstAttribute="top" secondItem="neQ-lz-PhF" secondAttribute="bottom" constant="1" id="XCd-pA-OG9"/>
                             <constraint firstItem="BRF-9A-KiO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YAM-gk-nTg"/>
@@ -140,9 +153,12 @@
                             <constraint firstItem="BRF-9A-KiO" firstAttribute="top" secondItem="ebf-uo-jdo" secondAttribute="bottom" constant="1" id="ZHr-ER-kaV"/>
                             <constraint firstItem="fF8-IS-Lpk" firstAttribute="top" secondItem="BQq-ky-RMS" secondAttribute="bottom" constant="1" id="Zka-Vy-c9R"/>
                             <constraint firstItem="neQ-lz-PhF" firstAttribute="top" secondItem="Clt-RM-bkc" secondAttribute="bottom" constant="1" id="agY-5K-Uhu"/>
+                            <constraint firstItem="7uB-OP-oWf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="be3-nu-gPH"/>
                             <constraint firstItem="fF8-IS-Lpk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bk8-w5-C8P"/>
                             <constraint firstItem="dLD-5c-mfL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="fNz-Yv-Zyp"/>
                             <constraint firstItem="7lN-Qe-XOu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="fOb-o7-eVa"/>
+                            <constraint firstItem="N1t-yc-c6o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="hC2-79-TcS"/>
+                            <constraint firstItem="7uB-OP-oWf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hv8-oy-iwx"/>
                             <constraint firstItem="cmw-nf-WAB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="125" id="m5p-yA-aEk"/>
                             <constraint firstItem="rno-BH-0d1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="pkk-62-dll"/>
                             <constraint firstItem="Clt-RM-bkc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rCi-la-eo2"/>
@@ -160,6 +176,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="W8I-43-z08"/>
                     <connections>
+                        <outlet property="clockLabel" destination="7uB-OP-oWf" id="GkO-Wt-bus"/>
+                        <outlet property="dateLabel" destination="N1t-yc-c6o" id="ZxA-Fu-2RR"/>
                         <outlet property="enterButton" destination="BQq-ky-RMS" id="ssv-1S-hax"/>
                         <outlet property="label" destination="zXa-Mz-BDe" id="JM4-EN-i5a"/>
                         <outlet property="textField" destination="7lN-Qe-XOu" id="Hz2-Yn-gVm"/>
