@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		315124AB1C97CF8E00AC57D7 /* MissSmartyPantsSkinny.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MissSmartyPantsSkinny.ttf; sourceTree = "<group>"; };
 		315124AD1C97D32A00AC57D7 /* spaceage.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = spaceage.otf; sourceTree = "<group>"; };
-		31ADF7351C962B1700A24615 /* HelloJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31ADF7351C962B1700A24615 /* Clock Font.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock Font.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31ADF7381C962B1700A24615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31ADF73A1C962B1700A24615 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31ADF73D1C962B1700A24615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		31ADF7361C962B1700A24615 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31ADF7351C962B1700A24615 /* HelloJokes.app */,
+				31ADF7351C962B1700A24615 /* Clock Font.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		31ADF7341C962B1700A24615 /* HelloJokes */ = {
+		31ADF7341C962B1700A24615 /* Clock Font */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31ADF7471C962B1700A24615 /* Build configuration list for PBXNativeTarget "HelloJokes" */;
+			buildConfigurationList = 31ADF7471C962B1700A24615 /* Build configuration list for PBXNativeTarget "Clock Font" */;
 			buildPhases = (
 				31ADF7311C962B1700A24615 /* Sources */,
 				31ADF7321C962B1700A24615 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = HelloJokes;
+			name = "Clock Font";
 			productName = HelloJokes;
-			productReference = 31ADF7351C962B1700A24615 /* HelloJokes.app */;
+			productReference = 31ADF7351C962B1700A24615 /* Clock Font.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 31ADF7301C962B1700A24615 /* Build configuration list for PBXProject "HelloJokes" */;
+			buildConfigurationList = 31ADF7301C962B1700A24615 /* Build configuration list for PBXProject "Clock Font" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31ADF7341C962B1700A24615 /* HelloJokes */,
+				31ADF7341C962B1700A24615 /* Clock Font */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +259,7 @@
 				INFOPLIST_FILE = HelloJokes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinleesf.HelloJokes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Clock Font";
 			};
 			name = Debug;
 		};
@@ -270,14 +270,14 @@
 				INFOPLIST_FILE = HelloJokes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinleesf.HelloJokes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Clock Font";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31ADF7301C962B1700A24615 /* Build configuration list for PBXProject "HelloJokes" */ = {
+		31ADF7301C962B1700A24615 /* Build configuration list for PBXProject "Clock Font" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31ADF7451C962B1700A24615 /* Debug */,
@@ -286,7 +286,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		31ADF7471C962B1700A24615 /* Build configuration list for PBXNativeTarget "HelloJokes" */ = {
+		31ADF7471C962B1700A24615 /* Build configuration list for PBXNativeTarget "Clock Font" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				31ADF7481C962B1700A24615 /* Debug */,

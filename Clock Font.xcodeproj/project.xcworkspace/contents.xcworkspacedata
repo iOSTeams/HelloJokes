@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HelloJokes.xcodeproj">
+      location = "self:/Users/kingjustin/Projects/iOS/xcode/HelloJokes/Clock Font.xcodeproj">
    </FileRef>
 </Workspace>
