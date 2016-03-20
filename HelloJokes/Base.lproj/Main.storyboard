@@ -29,21 +29,18 @@
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6f-Tz-J5v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
-                                <rect key="frame" x="150" y="25" width="300" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="IeS-VZ-hh7"/>
-                                    <constraint firstAttribute="width" constant="300" id="MME-6r-dH6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MissSmartyPants" family="MissSmartyPants" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-IS-Lpk">
                                 <rect key="frame" x="271" y="286" width="58" height="30"/>
                                 <state key="normal" title="setColor"/>
                                 <connections>
                                     <action selector="setColorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tG-LP-uDE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-RM-bkc">
+                                <rect key="frame" x="275" y="317" width="50" height="30"/>
+                                <state key="normal" title="setSize"/>
+                                <connections>
+                                    <action selector="setSizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1T-Dz-c0e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neQ-lz-PhF">
@@ -138,13 +135,30 @@
                                     <action selector="fadeOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JjU-CS-g6f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-RM-bkc">
-                                <rect key="frame" x="275" y="317" width="50" height="30"/>
-                                <state key="normal" title="setSize"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfc-gd-sml">
+                                <rect key="frame" x="200" y="28" width="32" height="30"/>
+                                <state key="normal" title="Hide"/>
                                 <connections>
-                                    <action selector="setSizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X1T-Dz-c0e"/>
+                                    <action selector="hideButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Owz-qr-D9f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMs-OG-ovS">
+                                <rect key="frame" x="354" y="30" width="46" height="30"/>
+                                <state key="normal" title="Reveal"/>
+                                <connections>
+                                    <action selector="revealButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17r-Ps-ulA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
+                                <rect key="frame" x="150" y="25" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IeS-VZ-hh7"/>
+                                    <constraint firstAttribute="width" constant="300" id="MME-6r-dH6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MissSmartyPants" family="MissSmartyPants" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

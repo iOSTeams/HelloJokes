@@ -30,13 +30,19 @@ class ViewController: UIViewController {
              timer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: ("updateClock"), userInfo: nil, repeats: true)
         
     }
+    @IBAction func revealButtonClicked(sender: AnyObject) {
+        self.label.hidden = false
+    }
+    @IBAction func hideButtonClicked(sender: AnyObject) {
+                self.label.hidden = true
+    }
     @IBAction func fadeIn(sender: AnyObject) {
-        UIView.animateWithDuration(1, animations:{
+        UIView.animateWithDuration(0.3, animations:{
             self.label.alpha = 1
         })
     }
     @IBAction func fadeOut(sender: AnyObject) {
-        UIView.animateWithDuration(1, animations:{
+        UIView.animateWithDuration(0.3, animations:{
             self.label.alpha = 0
         })
     }
