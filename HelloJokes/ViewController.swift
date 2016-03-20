@@ -30,6 +30,36 @@ class ViewController: UIViewController {
              timer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: ("updateClock"), userInfo: nil, repeats: true)
         
     }
+    @IBAction func randomWordButtonClicked(sender: AnyObject) {
+        
+        let randWord = arc4random_uniform(5)
+        
+        switch (randWord) {
+            
+        case 0:
+            label.text = "blue" + String(randWord)
+            break
+        case 1:
+            label.text = "red" + String(randWord)
+            break
+        case 2:
+            label.text = "green" + String(randWord)
+            break
+        case 3:
+            label.text = "purple"
+            break
+        case 4:
+            label.text = "orange"
+            break
+        
+        default:
+            break
+            
+            
+        }
+
+        
+    }
     @IBAction func randomButtonClicked(sender: AnyObject) {
         let rand = arc4random_uniform(100)
         label.text = String(rand)
