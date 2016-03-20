@@ -29,6 +29,16 @@
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6f-Tz-J5v"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
+                                <rect key="frame" x="150" y="25" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IeS-VZ-hh7"/>
+                                    <constraint firstAttribute="width" constant="300" id="MME-6r-dH6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MissSmartyPants" family="MissSmartyPants" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-IS-Lpk">
                                 <rect key="frame" x="271" y="286" width="58" height="30"/>
                                 <state key="normal" title="setColor"/>
@@ -150,29 +160,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS5-eu-KNk">
-                                <rect key="frame" x="150" y="0.0" width="47" height="30"/>
+                                <rect key="frame" x="95" y="317" width="47" height="30"/>
                                 <state key="normal" title="Enable"/>
                                 <connections>
                                     <action selector="enableButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTG-V8-vMk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZu-qK-2gT">
-                                <rect key="frame" x="342" y="0.0" width="51" height="30"/>
+                                <rect key="frame" x="378" y="302" width="51" height="30"/>
                                 <state key="normal" title="Disable"/>
                                 <connections>
                                     <action selector="disableButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffO-1Q-glG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
-                                <rect key="frame" x="150" y="25" width="300" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="IeS-VZ-hh7"/>
-                                    <constraint firstAttribute="width" constant="300" id="MME-6r-dH6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MissSmartyPants" family="MissSmartyPants" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -234,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="945"/>
+            <point key="canvasLocation" x="329" y="1061"/>
         </scene>
     </scenes>
 </document>

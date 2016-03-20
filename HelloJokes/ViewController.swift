@@ -31,10 +31,10 @@ class ViewController: UIViewController {
         
     }
     @IBAction func disableButtonClicked(sender: AnyObject) {
-        self.label.enabled = false
+        self.enterButton.enabled = false
     }
     @IBAction func enableButtonClicked(sender: AnyObject) {
-        self.label.enabled = true
+        self.enterButton.enabled = true
     }
     @IBAction func revealButtonClicked(sender: AnyObject) {
         self.label.hidden = false
