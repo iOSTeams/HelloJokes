@@ -30,6 +30,16 @@ class ViewController: UIViewController {
              timer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: ("updateClock"), userInfo: nil, repeats: true)
         
     }
+    @IBAction func fadeIn(sender: AnyObject) {
+        UIView.animateWithDuration(1, animations:{
+            self.label.alpha = 1
+        })
+    }
+    @IBAction func fadeOut(sender: AnyObject) {
+        UIView.animateWithDuration(1, animations:{
+            self.label.alpha = 0
+        })
+    }
     @IBAction func startButton(sender: UIButton) {
         counter = 0
         timeLabel.text = String(counter)
