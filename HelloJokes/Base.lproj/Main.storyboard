@@ -173,6 +173,13 @@
                                     <action selector="disableButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffO-1Q-glG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCa-H2-2AM">
+                                <rect key="frame" x="111" y="384" width="108" height="30"/>
+                                <state key="normal" title="randomNumber"/>
+                                <connections>
+                                    <action selector="randomButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ii-eR-gDx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

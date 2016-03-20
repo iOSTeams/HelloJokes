@@ -30,6 +30,11 @@ class ViewController: UIViewController {
              timer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: ("updateClock"), userInfo: nil, repeats: true)
         
     }
+    @IBAction func randomButtonClicked(sender: AnyObject) {
+        let rand = arc4random_uniform(100)
+        label.text = String(rand)
+    }
+    @IBOutlet weak var randomButtonClicked: UIButton!
     @IBAction func disableButtonClicked(sender: AnyObject) {
         self.enterButton.enabled = false
     }
