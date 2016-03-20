@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var textField: UITextField!
-
+    @IBOutlet weak var secondLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +58,37 @@ class ViewController: UIViewController {
             
         }
 
+        
+    }
+    @IBAction func jokeButtonClicked(sender: AnyObject) {
+        
+        let randJoke = arc4random_uniform(5)
+        
+        switch(randJoke) {
+        case 1:
+            label.text = "Why are computers like air conditioners"
+            secondLabel.text = "They stop working when you open Windows"
+            break
+        case 2:
+            label.text = "What is the difference between a snowman and a snowwomen?"
+            secondLabel.text = "Snowballs"
+            break
+        case 3:
+            label.text = "What do you call a fake noodle?"
+            secondLabel.text = "An impasta"
+        case 4:
+            label.text = "What is the stupidest animal in a jungle?"
+            secondLabel.text = "A polar bear"
+            break
+        case 5:
+            label.text = "Why did the sheep cross the road?"
+            secondLabel.text = "To go to a baaaa-rber shop"
+            break
+        
+        default:
+        break
+        }
+    
         
     }
     @IBAction func randomButtonClicked(sender: AnyObject) {

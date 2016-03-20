@@ -7,6 +7,7 @@
     <customFonts key="customFonts">
         <mutableArray key="MissSmartyPantsSkinny.ttf">
             <string>MissSmartyPants</string>
+            <string>MissSmartyPants</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -29,7 +30,7 @@
                                     <action selector="enterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6f-Tz-J5v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe" userLabel="firstLabel">
                                 <rect key="frame" x="150" y="25" width="300" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="IeS-VZ-hh7"/>
@@ -187,6 +188,23 @@
                                     <action selector="randomWordButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zad-3u-sSX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wX3-11-qGz" userLabel="secondLabel">
+                                <rect key="frame" x="150" y="133" width="300" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GpR-Fc-VSI"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="YSo-Qy-ODa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MissSmartyPants" family="MissSmartyPants" pointSize="31"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okD-Ip-6Y0">
+                                <rect key="frame" x="87" y="502" width="63" height="30"/>
+                                <state key="normal" title="gotJokes"/>
+                                <connections>
+                                    <action selector="jokeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOl-aN-YxN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -218,7 +236,9 @@
                             <constraint firstItem="dLD-5c-mfL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="200" id="fNz-Yv-Zyp"/>
                             <constraint firstItem="7lN-Qe-XOu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="fOb-o7-eVa"/>
                             <constraint firstItem="N1t-yc-c6o" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="hC2-79-TcS"/>
+                            <constraint firstItem="wX3-11-qGz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpm-Sa-I4F"/>
                             <constraint firstItem="7uB-OP-oWf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hv8-oy-iwx"/>
+                            <constraint firstItem="wX3-11-qGz" firstAttribute="top" secondItem="zXa-Mz-BDe" secondAttribute="bottom" constant="5" id="krP-oC-1kV"/>
                             <constraint firstItem="cmw-nf-WAB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="m5p-yA-aEk"/>
                             <constraint firstItem="rno-BH-0d1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="pkk-62-dll"/>
                             <constraint firstItem="Clt-RM-bkc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rCi-la-eo2"/>
@@ -242,6 +262,7 @@
                         <outlet property="dateLabel" destination="N1t-yc-c6o" id="ZxA-Fu-2RR"/>
                         <outlet property="enterButton" destination="BQq-ky-RMS" id="ssv-1S-hax"/>
                         <outlet property="label" destination="zXa-Mz-BDe" id="JM4-EN-i5a"/>
+                        <outlet property="secondLabel" destination="wX3-11-qGz" id="HbN-RG-56d"/>
                         <outlet property="textField" destination="7lN-Qe-XOu" id="Hz2-Yn-gVm"/>
                         <outlet property="timeLabel" destination="rno-BH-0d1" id="5KN-sl-RiE"/>
                     </connections>
