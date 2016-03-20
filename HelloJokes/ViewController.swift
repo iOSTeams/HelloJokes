@@ -30,6 +30,12 @@ class ViewController: UIViewController {
              timer = NSTimer.scheduledTimerWithTimeInterval(0, target: self, selector: ("updateClock"), userInfo: nil, repeats: true)
         
     }
+    @IBAction func disableButtonClicked(sender: AnyObject) {
+        self.label.enabled = false
+    }
+    @IBAction func enableButtonClicked(sender: AnyObject) {
+        self.label.enabled = true
+    }
     @IBAction func revealButtonClicked(sender: AnyObject) {
         self.label.hidden = false
     }

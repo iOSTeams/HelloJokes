@@ -149,6 +149,20 @@
                                     <action selector="revealButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17r-Ps-ulA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS5-eu-KNk">
+                                <rect key="frame" x="150" y="0.0" width="47" height="30"/>
+                                <state key="normal" title="Enable"/>
+                                <connections>
+                                    <action selector="enableButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTG-V8-vMk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZu-qK-2gT">
+                                <rect key="frame" x="342" y="0.0" width="51" height="30"/>
+                                <state key="normal" title="Disable"/>
+                                <connections>
+                                    <action selector="disableButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffO-1Q-glG"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXa-Mz-BDe">
                                 <rect key="frame" x="150" y="25" width="300" height="100"/>
                                 <constraints>
@@ -220,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="350" y="944"/>
+            <point key="canvasLocation" x="353" y="945"/>
         </scene>
     </scenes>
 </document>
